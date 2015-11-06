@@ -1,8 +1,8 @@
-﻿
-namespace ARPGCommon
+﻿namespace ARPGCommon
 {
     public enum OperationCode
     {
-        Login
+        Login,
+        GetServer
     }
 }

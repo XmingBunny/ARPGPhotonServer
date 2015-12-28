@@ -1,9 +1,16 @@
-﻿using Photon.SocketServer;
+﻿using ARPGCommon;
+using Photon.SocketServer;
 
 namespace ARPGPhotonServer.Handlers
 {
-    abstract class HandlerBase
+    internal abstract class HandlerBase
     {
-        public abstract OperationResponse OnHandlerMeesage(OperationRequest request);
+        protected HandlerBase()
+        {
+            ArpgApplication.Instance.Handlers.Add((byte) OpCode, this);
+        }
+
+        public abstract OperationResponse OnHandlerMeesage(OperationRequest request, ClientPeer peer);
+        protected abstract OperationCode OpCode { get; }
     }
 }

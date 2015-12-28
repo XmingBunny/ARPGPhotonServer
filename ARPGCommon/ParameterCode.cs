@@ -6,6 +6,11 @@ namespace ARPGCommon
 {
     public enum ParameterCode : byte
     {
-        ServerList
+        ServerList,
+        UserCheckInfo,
+        Role,
+        RoleList,
+        SubCode,
+        TaskDb
     }
 }

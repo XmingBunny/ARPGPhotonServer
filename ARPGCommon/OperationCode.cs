@@ -1,8 +1,11 @@
 ﻿namespace ARPGCommon
 {
-    public enum OperationCode
+    public enum OperationCode : byte
     {
         Login,
-        GetServer
+        GetServer,
+        Register,
+        Role,
+        Task
     }
 }

@@ -37,25 +37,25 @@
       <HintPath>..\..\..\..\Photon\lib\ExitGamesLibs.dll</HintPath>
     </Reference>
     <Reference Include="FluentNHibernate">
-      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Iesi.Collections">
-      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="LitJson">
-      <HintPath>D:\BaiduYunDownload\material\Plugin\LitJson.dll</HintPath>
+      <HintPath>G:\BaiduYunDownload\material\素材\Plugin\LitJson.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\..\..\Photon\lib\log4net.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+      <HintPath>..\packages\NHibernate.3.3.5.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Photon.SocketServer">
       <HintPath>..\..\..\..\Photon\lib\Photon.SocketServer.dll</HintPath>
     </Reference>
     <Reference Include="PhotonHostRuntimeInterfaces">
-      <HintPath>..\..\..\..\Photon\lib\PhotonHostRuntimeInterfaces.dll</HintPath>
+      <HintPath>D:\Photon\lib\PhotonHostRuntimeInterfaces.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -69,13 +69,23 @@
   <ItemGroup>
     <Compile Include="ARPGApplication.cs" />
     <Compile Include="ClientPeer.cs" />
+    <Compile Include="DB\Manager\RoleManager.cs" />
     <Compile Include="DB\Manager\ServerPropertyManager.cs" />
+    <Compile Include="DB\Manager\TaskDbManager.cs" />
+    <Compile Include="DB\Manager\UserManager.cs" />
+    <Compile Include="DB\Mapping\RoleMap.cs" />
     <Compile Include="DB\Mapping\ServerPropertyMap.cs" />
+    <Compile Include="DB\Mapping\TaskDbMap.cs" />
+    <Compile Include="DB\Mapping\UserMap.cs" />
     <Compile Include="DB\NHibernateHelper.cs" />
     <Compile Include="Handlers\HandlerBase.cs" />
     <Compile Include="Handlers\LoginHandler.cs" />
-    <Compile Include="Handlers\ServerPropertyHanlder.cs" />
+    <Compile Include="Handlers\RegisterHandler.cs" />
+    <Compile Include="Handlers\RoleHandler.cs" />
+    <Compile Include="Handlers\ServerPropertyHandler.cs" />
+    <Compile Include="Handlers\TaskDbHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\MD5Tool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="log4net.config">

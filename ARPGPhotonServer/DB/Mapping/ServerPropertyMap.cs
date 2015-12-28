@@ -14,7 +14,7 @@ namespace ARPGPhotonServer.DB.Mapping
             Id(x => x.Id).Column("id");
             Map(x => x.Ip).Column("ip");
             Map(x => x.Name).Column("name");
-            Map(x => x.Count).Column("int");
+            Map(x => x.Count).Column("count");
             Table("serverproperty");
         }
     }

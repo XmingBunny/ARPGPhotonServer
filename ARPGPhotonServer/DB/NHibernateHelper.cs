@@ -11,7 +11,7 @@ namespace ARPGPhotonServer.DB
 
         private NHibernateHelper()
         {
-            OpenSession();
+            InitSessionFactory();
         }
 
         public ISession OpenSession()
@@ -19,7 +19,7 @@ namespace ARPGPhotonServer.DB
             return _sessionFactory.OpenSession();
         }
 
-        private void GetSessionFactory()
+        private void InitSessionFactory()
         {
             _sessionFactory =
                 Fluently.Configure()
